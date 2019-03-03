@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StyledTextView">
+        <attr name="customFont">
+            <flag name="nanum_barun_gothic_regular" value="0x01"/>
+            <flag name="nanum_barun_gothic_bold" value="0x02"/>
+            <flag name="nanum_barun_gothic_light" value="0x03"/>
+            <flag name="nanum_barun_gothic_ultra_light" value="0x04"/>
+            <flag name="nanum_square_regular" value="0x05"/>
+            <flag name="nanum_square_bold" value="0x06"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

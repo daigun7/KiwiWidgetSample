@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DefaultTextView"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/button"/>
+
+    <io.kiwi.widget.StyledButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StyledButton"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hello"
+            app:layout_constraintBottom_toTopOf="@id/text_view"
+            app:customFont="nanum_barun_gothic_bold"/>
+
+    <io.kiwi.widget.StyledTextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StyledTextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button"
+            app:layout_constraintBottom_toTopOf="@id/edit_text"
+            app:customFont="nanum_barun_gothic_regular"/>
+
+    <io.kiwi.widget.StyledEditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="StyledEditText"
+            android:inputType="text"
+            android:maxLength="20"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view"
+            app:layout_constraintBottom_toTopOf="@id/radio_button"
+            app:customFont="nanum_barun_gothic_regular"/>
+
+    <io.kiwi.widget.StyledRadioButton
+            android:id="@+id/radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="32dp"
+            android:paddingStart="32dp"
+            android:text="StyledRadioButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_text"
+            app:layout_constraintBottom_toTopOf="@id/checkbox"
+            app:customFont="nanum_square_regular"/>
+
+    <io.kiwi.widget.StyledCheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="32dp"
+            android:paddingStart="32dp"
+            android:text="StyledCheckBox"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radio_button"
+            app:layout_constraintBottom_toTopOf="@id/currency_edit_text"
+            app:customFont="nanum_square_bold"/>
+
+    <io.kiwi.widget.CurrencyEditText
+            android:id="@+id/currency_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="96dp"
+            android:inputType="numberSigned"
+            android:maxLength="10"
+            android:gravity="end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkbox"
+            app:layout_constraintBottom_toTopOf="@id/focusedEditTextGroup"
+            app:customFont="nanum_barun_gothic_light"/>
+
+    <LinearLayout
+            android:id="@+id/focusedEditTextGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/currency_edit_text"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <io.kiwi.widget.AutoFocusedEditText
+                android:id="@+id/auto_focused_edit_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="96dp"
+                android:inputType="numberSigned"
+                android:maxLength="4"
+                android:gravity="center"
+                app:customFont="nanum_barun_gothic_light"/>
+
+        <io.kiwi.widget.AutoFocusedEditText
+                android:id="@+id/auto_focused_edit_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="96dp"
+                android:inputType="numberSigned"
+                android:maxLength="4"
+                android:gravity="center"
+                app:customFont="nanum_barun_gothic_light"/>
+
+        <io.kiwi.widget.AutoFocusedEditText
+                android:id="@+id/auto_focused_edit_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="96dp"
+                android:inputType="numberSigned"
+                android:maxLength="4"
+                android:gravity="center"
+                app:customFont="nanum_barun_gothic_light"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="font_nanum_barun_gothic_regular">fonts/nanum_barun_gothic_regular.otf</string>
+    <string name="font_nanum_barun_gothic_bold">fonts/nanum_barun_gothic_bold.otf</string>
+    <string name="font_nanum_barun_gothic_light">fonts/nanum_barun_gothic_light.otf</string>
+    <string name="font_nanum_barun_gothic_ultra_light">fonts/nanum_barun_gothic_ultra_light.otf</string>
+    <string name="font_nanum_square_regular">fonts/nanum_square_regular.otf</string>
+    <string name="font_nanum_square_bold">fonts/nanum_square_bold.otf</string>
+
+</resources>

@@ -3,7 +3,7 @@ package io.kiwi.widget
 import android.content.Context
 import android.content.res.TypedArray
 import android.os.Build
-import android.support.annotation.StyleRes
+import androidx.annotation.StyleRes
 import android.util.AttributeSet
 import android.widget.RadioButton
 
